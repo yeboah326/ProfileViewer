@@ -1,0 +1,53 @@
+// Imported Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+
+:root {
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+}
+
+// Landing Page
+$colors: #fedc00 0, #fedc00 1/18 * 100%, #fcb712 0, #fcb712 2/18 * 100%,
+  #f7921e 0, #f7921e 3/18 * 100%, #e87f24 0, #e87f24 4/18 * 100%, #dd6227 0,
+  #dd6227 5/18 * 100%, #dc4c27 0, #dc4c27 6/18 * 100%, #ca3435 0,
+  #ca3435 7/18 * 100%, #b82841 0, #b82841 8/18 * 100%, #953751 0,
+  #953751 9/18 * 100%, #364c88 0, #364c88 10/18 * 100%, #16599d 0,
+  #16599d 11/18 * 100%, #02609e 0, #02609e 12/18 * 100%, #0073a9 0,
+  #0073a9 13/18 * 100%, #008aa4 0, #008aa4 14/18 * 100%, #239a87 0,
+  #239a87 15/18 * 100%, #7cba6d 0, #7cba6d 16/18 * 100%, #becc2f 0,
+  #becc2f 17/18 * 100%, #e0d81d 0, #e0d81d 18/18 * 100%;
+
+.landing-page {
+  background: repeating-radial-gradient(circle at bottom left, $colors),
+    repeating-radial-gradient(circle at bottom right, $colors);
+  background-blend-mode: overlay;
+  height: 100vh;
+}
+
+.intro-board {
+  font-size: 7.5rem;
+  color: white;
+}
+
+.next-page {
+  width: 7.5rem;
+  height: 7.5rem;
+  border: none;
+  border-radius: 50%;
+  font-size: 4rem;
+  padding: 0;
+  color: #000;
+	background-color:#fff;
+	transition-duration: 200ms;
+
+}
+.next-page:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	cursor: pointer;
+}
